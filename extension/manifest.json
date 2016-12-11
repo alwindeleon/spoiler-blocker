@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Ext.",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Sir Tope Dabes"
+  },
+  "permissions": [
+    "*://*.facebook.com/*",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "content_scripts": [
+    {
+      "matches":["*://*.facebook.com/*"],
+      "js":["js/jquery.js","js/contentscript.js"]
+    }
+  ]
+  
+}
