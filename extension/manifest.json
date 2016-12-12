@@ -13,7 +13,8 @@
     "*://*.facebook.com/*",
     "activeTab",
     "webRequest",
-    "webRequestBlocking"
+    "webRequestBlocking",
+    "storage"
   ],
   "content_scripts": [
     {
