@@ -1,15 +1,17 @@
 {
   "manifest_version": 2,
 
-  "name": "Facebook Ext.",
+  "name": "Facebook Spoiler Blocker",
   "description": "This extension shows a Google Image search result for the current page",
   "version": "1.0",
 
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "Sir Tope Dabes"
+    "default_title": "Sir Tope Dabes",
+    "default_icon": "images/icon.png"
   },
   "permissions": [
+    "<all_urls>",
     "*://*.facebook.com/*",
     "activeTab",
     "webRequest",
@@ -21,6 +23,12 @@
       "matches":["*://*.facebook.com/*"],
       "js":["js/jquery.js","js/contentscript.js"]
     }
-  ]
+  ],
+  "icons": {
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "64": "images/icon.png",
+    "128": "images/icon.png"
+  }
   
 }
